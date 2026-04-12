@@ -1,0 +1,42 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flet
+
+      - name: Build APK
+        run: |
+          flet build apk \
+            --name "2zer011" \
+            --package "com.yourcompany.2zer011" \
+            --version "1.0.0" \
+            --build-number "1" \
+            --icon "assets/icon.png" \
+            --permission "android.permission.READ_EXTERNAL_STORAGE" \
+            --permission "android.permission.WRITE_EXTERNAL_STORAGE" \
+            --include-packages flet \
+            --output "2zer011.apk"
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2zer011-apk
+          path: build/apk/debug/app-debug.apk
