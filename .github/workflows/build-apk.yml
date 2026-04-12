@@ -24,14 +24,7 @@ jobs:
 
       - name: Build APK
         run: |
-          flet build apk \
-            --name "2zer011" \
-            --package "com.yourcompany.2zer011" \
-            --version "1.0.0" \
-            --build-number "1" \
-            --icon "assets/icon.png" \
-            --include-packages flet \
-            --output "2zer011.apk"
+          flet build apk --verbose
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
