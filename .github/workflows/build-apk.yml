@@ -30,8 +30,6 @@ jobs:
             --version "1.0.0" \
             --build-number "1" \
             --icon "assets/icon.png" \
-            --permission "android.permission.READ_EXTERNAL_STORAGE" \
-            --permission "android.permission.WRITE_EXTERNAL_STORAGE" \
             --include-packages flet \
             --output "2zer011.apk"
 
