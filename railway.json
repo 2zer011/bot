@@ -3,12 +3,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "numReplicas": 1,
+    "startCommand": "python 2zer011botdis.py",
     "restartPolicyType": "ALWAYS"
-  },
-  "workers": {
-    "bot": {
-      "start": "python 2zer011botdis.py"
-    }
   }
 }
