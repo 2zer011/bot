@@ -1,0 +1,106 @@
+{
+  "bot": {
+    "prefix": "!",
+    "description": "2zer011 Gambling Bot - Discord Cờ bạc"
+  },
+  "economy": {
+    "work_cooldown_seconds": 120,
+    "work_min_reward": 1000,
+    "work_max_reward": 2000,
+    "tax_percentage": 5,
+    "starting_balance": 10000
+  },
+  "games": {
+    "flip": {
+      "multiplier": 2,
+      "name": "🪙 Tung đồng xu"
+    },
+    "dice": {
+      "multiplier": 6,
+      "name": "🎲 Xúc xắc"
+    },
+    "taixiu": {
+      "multiplier": 2,
+      "name": "🎲 Tài/Xỉu"
+    },
+    "plane": {
+      "min_multiplier": 1.0,
+      "max_multiplier": 10.0,
+      "name": "✈️ Máy bay"
+    },
+    "jackpot": {
+      "all_match_multiplier": 20,
+      "two_match_multiplier": 3,
+      "name": "🎰 Máy jackpot"
+    },
+    "minesweeper": {
+      "total_squares": 25,
+      "coefficient_per_bomb": 0.15,
+      "revealed_squares": 5,
+      "name": "💣 Dò mìn"
+    }
+  },
+  "shop": {
+    "lucky_charm": {
+      "price": 500000000,
+      "name": "🍀 Bùa may mắn",
+      "effect": 1.2,
+      "description": "Tăng tiền thắng 1.2x"
+    },
+    "golden_coin": {
+      "price": 1000000000,
+      "name": "🪙 Đồng xu vàng",
+      "effect": 1.5,
+      "description": "Tăng tiền thắng 1.5x"
+    },
+    "dragon_scale": {
+      "price": 2000000000,
+      "name": "🐉 Vảy rồng",
+      "effect": 2.0,
+      "description": "Tăng tiền thắng 2.0x"
+    },
+    "fortune_egg": {
+      "price": 3000000000,
+      "name": "🥚 Quả trứng may mắn",
+      "effect": 1.0,
+      "description": "Tự động thắng 1 game (premium)"
+    }
+  },
+  "jobs": {
+    "default": {
+      "name": "🧑‍💻 Lập trình",
+      "reward_multiplier": 1.0
+    },
+    "fishing": {
+      "name": "🎣 Đánh cá",
+      "reward_multiplier": 1.0
+    },
+    "mining": {
+      "name": "⛏️ Khai thác",
+      "reward_multiplier": 1.0
+    },
+    "farming": {
+      "name": "🌾 Nông nghiệp",
+      "reward_multiplier": 1.0
+    },
+    "chef": {
+      "name": "👨‍🍳 Nấu ăn",
+      "reward_multiplier": 1.0
+    },
+    "design": {
+      "name": "🎨 Thiết kế",
+      "reward_multiplier": 1.0
+    },
+    "gaming": {
+      "name": "🎮 Chơi game",
+      "reward_multiplier": 1.0
+    }
+  },
+  "colors": {
+    "success": 65280,
+    "error": 16711680,
+    "info": 3447003,
+    "warning": 16776960,
+    "gold": 16766720
+  }
+}
